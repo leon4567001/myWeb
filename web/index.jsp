@@ -10,7 +10,21 @@
   <head>
     <title>登陆界面</title>
   </head>
+  <h1>系统登陆界面</h1>
+  <hr>
   <body>
-  $END$
+  <form name="myForm" action="userLogin" method="post">
+    <table>
+      <tr>
+        <td>用户名:</td>
+        <td><input type="text" name="username"></td>
+        <td>密码:</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="登录"></td>
+      </tr>
+    </table>
+  </form>
   </body>
 </html>

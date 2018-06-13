@@ -5,4 +5,15 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
+    <!--必须继承自struts-default-->
+    <package name="default" namespace="/" extends="struts-default">
+        <!--首页请求，name对应index.jsp中的action名字-->
+        <action name="userLogin" class="action.UserAction" method="sysLogin">
+            <!--不判断返回结果直接跳转-->
+            <!--<result>success.jsp</result>-->
+            <!--判断返回结果跳转-->
+            <result name="Login_Success">/WEB-INF/login/success.jsp</result>
+            <result name="Login_Failure">/WEB-INF/login/failure.jsp</result>
+        </action>
+    </package>
 </struts>
