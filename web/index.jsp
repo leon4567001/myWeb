@@ -25,6 +25,8 @@
         <td><input type="submit" value="登录"></td>
       </tr>
     </table>
+      <%--使用了struts2后页面跳转会被拦截--%>
+      <a href="/WEB-INF/login/success.jsp">open a new chart</a>
   </form>
   </body>
 </html>
